@@ -1,0 +1,6 @@
+framework module Pods_MDMwithMVVM {
+  umbrella header "Pods-MDMwithMVVM-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -22,6 +22,7 @@ class DevicesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rx.setDelegate(self).disposed(by: bag)
+        tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         
         bindTableView()
     }

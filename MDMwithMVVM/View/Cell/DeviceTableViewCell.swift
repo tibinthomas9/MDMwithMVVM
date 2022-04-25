@@ -9,6 +9,10 @@ import UIKit
 
 class DeviceTableViewCell: UITableViewCell {
     @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var leftImageView: UIImageView!
+    @IBOutlet weak var titleText: UILabel!
+    @IBOutlet weak var subtitleText: UILabel!
+    @IBOutlet weak var rightImageView: UIImageView!
     
     var item: Device! {
         didSet {
@@ -17,8 +21,8 @@ class DeviceTableViewCell: UITableViewCell {
     }
 
     private func setDeviceData() {
-       // productImg.image = UIImage(named: item.imageURL)
-       // nameLbl.text = item.title
+        titleText.text = item.title
+        subtitleText.text = item.type
     }
 
     override func awakeFromNib() {

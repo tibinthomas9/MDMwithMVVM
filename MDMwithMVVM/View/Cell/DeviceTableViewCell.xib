@@ -79,6 +79,10 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="containerView" destination="70u-TN-vMX" id="6Zo-3o-phK"/>
+                <outlet property="leftImageView" destination="LaP-dq-5f6" id="hta-Dv-yFd"/>
+                <outlet property="rightImageView" destination="rzp-4S-6gW" id="ONV-eI-vIa"/>
+                <outlet property="subtitleText" destination="nSt-Ef-jL8" id="26c-xT-pAm"/>
+                <outlet property="titleText" destination="8fq-yQ-oMV" id="T2r-ze-ehi"/>
             </connections>
             <point key="canvasLocation" x="153.62318840579712" y="109.82142857142857"/>
         </tableViewCell>
