@@ -26,12 +26,9 @@ extension DataFetcher {
                 return
             }
             guard let data = data else {
-                print(error)
                 completion(nil)
                 return
             }
-            print("data2")
-
             completion(self.decode(data))
         }
         
@@ -80,11 +77,6 @@ extension JsonRequest: DataFetcher {
             print("JSON decode failed: \(jsonError)")
           }
           return nil
-        
-//        print("data", data, Model.self)
-//        let  responeModel = try? JSONDecoder().decode(Model.self, from: data)
-//
-//        return responeModel
     }
     
     func load(withCompletion completion: @escaping (Model?) -> Void) {

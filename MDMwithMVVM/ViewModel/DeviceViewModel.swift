@@ -15,9 +15,6 @@ class DeviceViewModel {
     
     func fetchDeviceList() {
             
-
-            let devices = [
-                Device(id: "123", type: "Sensor", price: 20, currency: "USD", isFavorite: true, imageURL: "", title: "Test Sensor", deviceDescription: "dcdd")                            ]
         if let path = Bundle.main.path(forResource: "data", ofType: "json") {
          let url = URL(fileURLWithPath: path)
             let request = JsonRequest<Devices>(url: url)
@@ -29,21 +26,6 @@ class DeviceViewModel {
                     }
         
         }
-//        if let path = Bundle.main.path(forResource: "data", ofType: "json") {
-//            print("jsonResult")
-//            do {
-//                  let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
-//                let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
-//                print(jsonResult)
-//                  if let jsonResult = jsonResult as? Dictionary<String, AnyObject>, let devices = jsonResult["devices"] as? [Any] {
-//                            // do stuff
-//                      print(devices)
-//                  }
-//              } catch {
-//                   // handle error
-//                  print("devices")
-//              }
-//        }
         
     }
     
